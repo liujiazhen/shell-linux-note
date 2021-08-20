@@ -29,3 +29,10 @@ Linux 的 Shell 种类众多，常见的有：
 在一般情况下，人们并不区分 Bourne Shell 和 Bourne Again Shell，所以，像 `#!/bin/sh`，它同样也可以改为 `#!/bin/bash`。
 
 `#!` 告诉系统其后路径所指定的程序即是解释此脚本文件的 Shell 程序。
+## 第一个shell脚本
+打开文本编辑器(可以使用 vi/vim 命令来创建文件)，新建一个文件 test.sh，扩展名为 sh（sh代表shell），扩展名并不影响脚本执行，见名知意就好，如果你用 php 写 shell 脚本，扩展名就用 php 好了。
+输入一些代码，第一行一般是这样：
+```
+#!/bin/bash
+echo "Hello World !"
+```
