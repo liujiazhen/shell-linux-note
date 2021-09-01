@@ -116,3 +116,27 @@ do
     echo "The value is: $loop"
 done
 ```
+输出结果：
+```
+The value is: 1
+The value is: 2
+The value is: 3
+The value is: 4
+The value is: 5
+```
+顺序输出字符串中的字符：
+```shell
+#!/bin/bash
+
+for str in This is a string
+do
+    echo $str
+done
+```
+输出结果：
+```
+This
+is
+a
+string
+```
