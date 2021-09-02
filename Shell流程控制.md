@@ -166,5 +166,14 @@ done
 4
 5
 ```
-以上实例使用了 Bash let 命令，它用于执行一个或多个表达式，变量计算中不需要加上 $ 来表示变量，具体可查阅：Bash let 命令。
+以上实例使用了 Bash let 命令，它用于执行一个或多个表达式，变量计算中不需要加上 $ 来表示变量，具体可查阅：[Bash let 命令](https://github.com/liujiazhen/shell-linux-note/blob/main/Linux%20let%20%E5%91%BD%E4%BB%A4.md)。
+
 while循环可用于读取键盘信息。下面的例子中，输入信息被设置为变量FILM，按<Ctrl-D>结束循环。
+```shell
+echo '按下 <CTRL-D> 退出'
+echo -n '输入你最喜欢的网站名: '
+while read FILM
+do
+    echo "是的！$FILM 是一个好网站"
+done
+```
