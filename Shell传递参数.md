@@ -58,12 +58,12 @@ Shell 传递参数实例！
 ```shell
 #!/bin/bash
 
-echo "-- \$* 演示 ---"
+echo "-- $* 演示 ---"
 for i in "$*"; do
     echo $i
 done
 
-echo "-- \$@ 演示 ---"
+echo "-- $@ 演示 ---"
 for i in "$@"; do
     echo $i
 done
